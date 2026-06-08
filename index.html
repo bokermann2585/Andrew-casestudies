@@ -994,5 +994,17 @@ The move to Sitecore XM Cloud provides a scalable foundation that supports long-
             });
         };
     </script>
+
+    <script>
+  // Force the browser to scroll to the top on a fresh page load
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    // Scroll to the absolute top of the page instantly
+    window.scrollTo(0, 0);
+  });
+</script>
 </body>
 </html>
